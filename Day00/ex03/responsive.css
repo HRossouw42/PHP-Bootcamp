@@ -1,0 +1,100 @@
+.tg  {border-collapse:collapse;border-spacing:0;}
+			.tg td{font-family:Arial, sans-serif;font-size:20px;padding:40px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+			.tg th{font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:40px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+			.tg .tg-qtf5{border-color:#000000;text-align:left}
+			.tg .tg-s268{text-align:left}
+			.tg .tg-0lax{text-align:left;vertical-align:top}
+			body{
+				font-family: serif;
+				background-color: rgb(49, 49, 49)
+				}
+
+			table.center{
+				margin-left: auto;
+				margin-right: auto;
+				}
+			h1{
+				text-align: center;
+				color: rgb(255, 255, 255);
+				font-size: calc(1em + 1vw);
+			}
+			div{
+				text-align: center;
+				resize: both;
+				overflow: auto;
+			}
+			.line{
+				width:88px;
+				height:88px;
+			}
+			.line:after{
+				content:"";
+				position:absolute;
+				border-top:1px solid red;
+				width:200px;
+				transform:translate(-40px) rotate(67deg);
+				transform-origin: 0% 0%;
+			}
+			p{
+				margin: 3px;
+			}
+			p.num{
+				text-align: right;
+				color:rgb(49, 49, 49);
+				font-size: calc(1em + 1vw);
+			}
+			h2{
+				text-align: center;
+				font-weight: bold;
+				margin: 10px;
+				color:rgb(49, 49, 49);
+				font-size: calc(1em + 1vw);
+			}
+			td {
+				min-width: 80px;
+			}
+			td.diatomic{
+				background-color: hsl(204, 100%, 50%);
+			}
+			td.halogen{
+				background-color: MediumOrchid;
+			}
+			td.classy{
+				background-color: MediumPurple;
+			}
+			td.nonmetal{
+				background-color: lightblue;
+			}
+			td.exploders{
+				background-color: rgb(255, 136, 0);
+			}
+			td.alkalineearth{
+				background-color: rgb(255, 166, 0);
+			}
+			td.metals{
+				background-color: rgb(43, 43, 204);
+			}
+			td.polyatomic{
+				background-color: rgb(196, 101, 145);
+			}
+			td.translocate{
+				background-color: rgb(52, 245, 203);
+			}
+			td.posttransition{
+				background-color: rgb(58, 158, 101);
+			}
+			td.lanky{
+				background-color: rgb(241, 191, 98);
+			}
+			td.actors{
+				background-color: rgb(224, 114, 160);
+			}
+			td.unknown{
+				background-color: rgb(155, 135, 112);
+			}
+			/*@media screen and (max-width: 767px) {div {width: auto !important;}.tg col {width: auto !important;} div {overflow-x: auto;-webkit-overflow-scrolling: touch;}}*/
+			@media screen and (min-width: 50em) {
+				html {
+				  font-size: 0.2vw;
+				}
+			  }
