@@ -1,4 +1,5 @@
 <html>
+	<head>
 		<style type="text/css">
 			.tg  {border-collapse:collapse;border-spacing:0;}
 			.tg td{font-family:Arial, sans-serif;font-size:20px;padding:40px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -6,150 +7,245 @@
 			.tg .tg-qtf5{border-color:#000000;text-align:left}
 			.tg .tg-s268{text-align:left}
 			.tg .tg-0lax{text-align:left;vertical-align:top}
-			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
-			<div class="tg-wrap"><table class="tg">
+			body{
+				font-family: serif;
+				background-color: rgb(49, 49, 49)
+				}
+
+				table.center{
+				margin-left: auto;
+				margin-right: auto;
+				}
+			h1{
+				text-align: center;
+				color: rgb(255, 255, 255);
+			}
+			div{
+				text-align: center;
+				resize: both;
+				overflow: auto;
+			}
+			.line{
+				width:88px;
+				height:88px;
+			}
+			.line:after{
+				content:"";
+				position:absolute;
+				border-top:1px solid red;
+				width:200px;
+				transform:translate(-40px) rotate(67deg);
+				transform-origin: 0% 0%;
+			}
+			p{
+				margin: 3px;
+			}
+			p.num{
+				text-align: right;
+				color:rgb(49, 49, 49);
+			}
+			h2{
+				text-align: center;
+				font-weight: bold;
+				margin: 10px;
+				color:rgb(49, 49, 49);
+			}
+			td {
+				min-width: 80px;
+			}
+			td.diatomic{
+				background-color: hsl(204, 100%, 50%);
+			}
+			td.halogen{
+				background-color: MediumOrchid;
+			}
+			td.classy{
+				background-color: MediumPurple;
+			}
+			td.nonmetal{
+				background-color: lightblue;
+			}
+			td.exploders{
+				background-color: rgb(255, 136, 0);
+			}
+			td.alkalineearth{
+				background-color: rgb(255, 166, 0);
+			}
+			td.metals{
+				background-color: rgb(43, 43, 204);
+			}
+			td.polyatomic{
+				background-color: rgb(196, 101, 145);
+			}
+			td.translocate{
+				background-color: rgb(52, 245, 203);
+			}
+			td.posttransition{
+				background-color: rgb(58, 158, 101);
+			}
+			td.lanky{
+				background-color: rgb(241, 191, 98);
+			}
+			td.actors{
+				background-color: rgb(224, 114, 160);
+			}
+			td.unknown{
+				background-color: rgb(155, 135, 112);
+			}
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+			</style>
+			<title>Mendeleiev Rules Ok?</title>
+		</head>
+		<body  >
+			<h1>Periodic Table</h1>
+			<p style="text-align:center;"><img src="https://i.kym-cdn.com/entries/icons/original/000/008/342/ihave.jpg" height="200px" width="450px">
+			<div class="tg-wrap"><table contenteditable="true" class="center">
 			  <tr>
-				<td class="tg-s268">H</td>
-				<td class="tg-s268" colspan="16"></td>
-				<td class="tg-0lax">He</td>
+					<td class="diatomic"><p class="num">1.008</p><h2>H</h2><p>1</p></td>
+					<td colspan="16"></td>
+					<td class="classy"><p class="num">4.00</p><h2>He</h2><p>2</p></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268">Li</td>
-				<td class="tg-s268">Be</td>
-				<td class="tg-s268" colspan="10" rowspan="2"></td>
-				<td class="tg-s268">B</td>
-				<td class="tg-s268">C</td>
-				<td class="tg-s268">N</td>
-				<td class="tg-0lax">O</td>
-				<td class="tg-0lax">F</td>
-				<td class="tg-0lax">Ne</td>
+					<td class="exploders"><p class="num">6.94</p><h2>Li</h2><p>3</p></td>
+					<td class="alkalineearth"><p class="num">9.01</p><h2>Be</h2><p>4</p></td>
+					<td colspan="10"></td>
+					<td class="metals"><p class="num">10.81</p><h2>B</h2><p>5</p></td>
+					<td class="nonmetal"><p class="num">12.01</p><h2>C</h2><p>6</p></td>
+					<td class="nonmetal"><p class="num">14.01</p><h2>N</h2><p>7</p></td>
+					<td class="nonmetal"><p class="num">16.00</p><h2>O</h2><p>8</p></td>
+					<td class="halogen"><p class="num">19.00</p><h2>F</h2><p>9</p></td>
+					<td class="classy"><p class="num">20.18</p><h2>Ne</h2><p>10</p></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268">Na</td>
-				<td class="tg-s268">Mg</td>
-				<td class="tg-s268">Al</td>
-				<td class="tg-s268">Si</td>
-				<td class="tg-s268">P</td>
-				<td class="tg-0lax">S</td>
-				<td class="tg-0lax">Cl</td>
-				<td class="tg-0lax">Ar</td>
+					<td class="exploders"><p class="num">22.99</p><h2>Na</h2><p>11</p></td>
+					<td class="alkalineearth"><p class="num">24.31</p><h2>Mg</h2><p>12</p></td>
+					<td colspan="10"></td>
+					<td class="posttransition"><p class="num">26.98</p><h2>Al</h2><p>13</p></td>
+					<td class="metals"><p class="num">28.09</p><h2>Si</h2><p>14</p></td>
+					<td class="nonmetal"><p class="num">30.97</p><h2>P</h2><p>15</p></td>
+					<td class="nonmetal"><p class="num">32.07</p><h2>S</h2><p>16</p></td>
+					<td class="halogen"><p class="num">35.45</p><h2>Ci</h2><p>17</p></td>
+					<td class="classy"><p class="num">39.95</p><h2>Ar</h2><p>18</p></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268">K</td>
-				<td class="tg-s268">Ca</td>
-				<td class="tg-s268">Sc</td>
-				<td class="tg-s268">Ti</td>
-				<td class="tg-s268">V</td>
-				<td class="tg-s268">Cr</td>
-				<td class="tg-s268">Mn</td>
-				<td class="tg-s268">Fe</td>
-				<td class="tg-s268">Co</td>
-				<td class="tg-s268">Ni</td>
-				<td class="tg-s268">Cu</td>
-				<td class="tg-s268">Zn</td>
-				<td class="tg-s268">Ga</td>
-				<td class="tg-s268">Ge</td>
-				<td class="tg-s268">As</td>
-				<td class="tg-0lax">Se</td>
-				<td class="tg-0lax">Br</td>
-				<td class="tg-0lax">Kr</td>
+					<td class="exploders"><p class="num">39.10</p><h2>K</h2><p>19</p></td>
+					<td class="alkalineearth"><p class="num">40.08</p><h2>Ca</h2><p>20</p></td>
+					<td class="translocate"><p class="num">44.96</p><h2>Sc</h2><p>21</p></td>
+					<td class="translocate"><p class="num">47.87</p><h2>Ti</h2><p>22</p></td>
+					<td class="translocate"><p class="num">50.94</p><h2>V</h2><p>23</p></td>
+					<td class="translocate"><p class="num">52.00</p><h2>Cr</h2><p>24</p></td>
+					<td class="translocate"><p class="num">54.94</p><h2>Mn</h2><p>25</p></td>
+					<td class="translocate"><p class="num">55.85</p><h2>Fe</h2><p>26</p></td>
+					<td class="translocate"><p class="num">58.93</p><h2>Co</h2><p>27</p></td>
+					<td class="translocate"><p class="num">58.69</p><h2>Ni</h2><p>28</p></td>
+					<td class="translocate"><p class="num">63.55</p><h2>Cu</h2><p>29</p></td>
+					<td class="translocate"><p class="num">65.38</p><h2>Zn</h2><p>30</p></td>
+					<td class="posttransition"><p class="num">69.72</p><h2>Ga</h2><p>31</p></td>
+					<td class="metals"><p class="num">72.63</p><h2>Ge</h2><p>32</p></td>
+					<td class="metals"><p class="num">74.92</p><h2>Ar</h2><p>33</p></td>
+					<td class="nonmetal"><p class="num">78.96</p><h2>Se</h2><p>34</p></td>
+					<td class="halogen"><p class="num">79.90</p><h2>Br</h2><p>35</p></td>
+					<td class="classy"><p class="num">83.80</p><h2>Kr</h2><p>36</p></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268">Rb</td>
-				<td class="tg-s268">Sr</td>
-				<td class="tg-s268">Y</td>
-				<td class="tg-s268">Zr</td>
-				<td class="tg-s268">Nb</td>
-				<td class="tg-s268">Mo</td>
-				<td class="tg-s268">Tc</td>
-				<td class="tg-s268">Ru</td>
-				<td class="tg-s268">Rh</td>
-				<td class="tg-s268">Pd</td>
-				<td class="tg-s268">Ag</td>
-				<td class="tg-s268">Cd</td>
-				<td class="tg-s268">In</td>
-				<td class="tg-s268">Sn</td>
-				<td class="tg-s268">Sb</td>
-				<td class="tg-0lax">Te</td>
-				<td class="tg-0lax">I</td>
-				<td class="tg-0lax">Xe</td>
+					<td class="exploders"><p class="num">85.47</p><h2>Rb</h2><p>37</p></td>
+					<td class="alkalineearth"><p class="num">87.62</p><h2>Sr</h2><p>38</p></td>
+					<td class="translocate"><p class="num">88.91</p><h2>Y</h2><p>39</p></td>
+					<td class="translocate"><p class="num">91.22</p><h2>Zr</h2><p>40</p></td>
+					<td class="translocate"><p class="num">92.91</p><h2>Nb</h2><p>41</p></td>
+					<td class="translocate"><p class="num">95.96</p><h2>Mo</h2><p>42</p></td>
+					<td class="translocate"><p class="num">98</p><h2>Tc</h2><p>43</p></td>
+					<td class="translocate"><p class="num">101.07</p><h2>Ru</h2><p>44</p></td>
+					<td class="translocate"><p class="num">102.91</p><h2>Rh</h2><p>45</p></td>
+					<td class="translocate"><p class="num">106.42</p><h2>Pd</h2><p>46</p></td>
+					<td class="translocate"><p class="num">107.87</p><h2>Ag</h2><p>47</p></td>
+					<td class="translocate"><p class="num">112.41</p><h2>Cd</h2><p>48</p></td>
+					<td class="posttransition"><p class="num">114.82</p><h2>In</h2><p>49</p></td>
+					<td class="posttransition"><p class="num">118.71</p><h2>Sn</h2><p>50</p></td>
+					<td class="metals"><p class="num">121.76</p><h2>Sb</h2><p>51</p></td>
+					<td class="metals"><p class="num">127.60</p><h2>Te</h2><p>52</p></td>
+					<td class="halogen"><p class="num">126.90</p><h2>I</h2><p>53</p></td>
+					<td class="classy"><p class="num">131.29</p><h2>Xe</h2><p>54</p></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268">Cs</td>
-				<td class="tg-s268">Ba</td>
-				<td class="tg-s268">^</td>
-				<td class="tg-s268">Hf</td>
-				<td class="tg-s268">Ta</td>
-				<td class="tg-s268">W</td>
-				<td class="tg-s268">Re</td>
-				<td class="tg-s268">Os</td>
-				<td class="tg-s268">Ir</td>
-				<td class="tg-s268">Pt</td>
-				<td class="tg-s268">Au</td>
-				<td class="tg-s268">Hg</td>
-				<td class="tg-s268">Tl</td>
-				<td class="tg-s268">Pb</td>
-				<td class="tg-s268">Bi</td>
-				<td class="tg-0lax">Po</td>
-				<td class="tg-0lax">At</td>
-				<td class="tg-0lax">Rn</td>
+					<td class="exploders"><p class="num">132.91</p><h2>Cs</h2><p>55</p></td>
+					<td class="alkalineearth"><p class="num">137.33</p><h2>Ba</h2><p>56</p></td>
+					<td class="lanky"><p style="text-align:left">57-71</p></td>
+					<td class="translocate"><p class="num">178.49</p><h2>Hf</h2><p>72</p></td>
+					<td class="translocate"><p class="num">180.95</p><h2>Ta</h2><p>73</p></td>
+					<td class="translocate"><p class="num">183.84</p><h2>W</h2><p>74</p></td>
+					<td class="translocate"><p class="num">186.21</p><h2>Re</h2><p>75</p></td>
+					<td class="translocate"><p class="num">190.23</p><h2>Os</h2><p>76</p></td>
+					<td class="translocate"><p class="num">192.22</p><h2>Ir</h2><p>77</p></td>
+					<td class="translocate"><p class="num">195.08</p><h2>Pt</h2><p>78</p></td>
+					<td class="translocate"><p class="num">196.97</p><h2>Au</h2><p>79</p></td>
+					<td class="translocate"><p class="num">200.59</p><h2>Hg</h2><p>80</p></td>
+					<td class="posttransition"><p class="num">204.38</p><h2>Ti</h2><p>81</p></td>
+					<td class="posttransition"><p class="num">207.20</p><h2>Pb</h2><p>82</p></td>
+					<td class="posttransition"><p class="num">208.98</p><h2>Bi</h2><p>83</p></td>
+					<td class="metals"><p class="num">209</p><h2>Po</h2><p>84</p></td>
+					<td class="halogen"><p class="num">210</p><h2>At</h2><p>85</p></td>
+					<td class="classy"><p class="num">222</p><h2>Rn</h2><p>86</p></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268">Fr</td>
-				<td class="tg-s268">Ra</td>
-				<td class="tg-s268">^</td>
-				<td class="tg-s268">Rf</td>
-				<td class="tg-s268">Db</td>
-				<td class="tg-s268">Sg</td>
-				<td class="tg-s268">Bh</td>
-				<td class="tg-s268">Hs</td>
-				<td class="tg-s268">Mt</td>
-				<td class="tg-s268">Ds</td>
-				<td class="tg-s268">Rg</td>
-				<td class="tg-s268">Cn</td>
-				<td class="tg-s268">Nh</td>
-				<td class="tg-s268">Fl</td>
-				<td class="tg-s268">Mc</td>
-				<td class="tg-0lax">Lv</td>
-				<td class="tg-0lax">Ts</td>
-				<td class="tg-0lax">Og</td>
+					<td class="exploders"><p class="num">223</p><h2>Fr</h2><p>87</p></td>
+					<td class="alkalineearth"><p class="num">226</p><h2>Ra</h2><p>88</p></td>
+					<td class="actors"><p style="text-align:left">89-103</p></td>
+					<td class="translocate"><p class="num">267</p><h2>Rf</h2><p>104</p></td>
+					<td class="translocate"><p class="num">268</p><h2>Db</h2><p>105</p></td>
+					<td class="translocate"><p class="num">271</p><h2>Sg</h2><p>106</p></td>
+					<td class="translocate"><p class="num">272</p><h2>Bh</h2><p>107</p></td>
+					<td class="translocate"><p class="num">277</p><h2>Hs</h2><p>108</p></td>
+					<td class="unknown"><p class="num">276</p><h2>Mt</h2><p>109</p></td>
+					<td class="unknown"><p class="num">281</p><h2>Ds</h2><p>110</p></td>
+					<td class="unknown"><p class="num">280</p><h2>Rg</h2><p>111</p></td>
+					<td class="translocate"><p class="num">285</p><h2>Cn</h2><p>112</p></td>
+					<td class="unknown"><p class="num">284</p><h2>Ni</h2><p>113</p></td>
+					<td class="posttransition"><p class="num">289</p><h2>Fl</h2><p>114</p></td>
+					<td class="unknown"><p class="num">288</p><h2>Mc</h2><p>115</p></td>
+					<td class="unknown"><p class="num">293</p><h2>Lv</h2><p>116</p></td>
+					<td class="unknown"><p class="num">294</p><h2>Ts</h2><p>117</p></td>
+					<td class="unknown"><p class="num">294</p><h2>Og</h2><p>118</p></td>
 			  </tr>
 			  <tr>
 				<td class="tg-s268" colspan="18"></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268" colspan="2" rowspan="2"></td>
-				<td class="tg-s268">Cr</td>
-				<td class="tg-s268">Pr</td>
-				<td class="tg-s268">Nd</td>
-				<td class="tg-s268">Pm</td>
-				<td class="tg-s268">Sm</td>
-				<td class="tg-s268">Eu</td>
-				<td class="tg-s268">Gd</td>
-				<td class="tg-s268">Tb</td>
-				<td class="tg-s268">Dy</td>
-				<td class="tg-s268">Ho</td>
-				<td class="tg-s268">Er</td>
-				<td class="tg-s268">Tm</td>
-				<td class="tg-qtf5">Yb</td>
-				<td class="tg-0lax">Lu</td>
-				<td class="tg-0lax" colspan="2" rowspan="2"></td>
+					<td colspan="3"></td>
+					<td class="lanky"><p class="num">138.91</p><h2>La</h2><p>57</p></td>
+					<td class="lanky"><p class="num">140.12</p><h2>Ce</h2><p>58</p></td>
+					<td class="lanky"><p class="num">140.91</p><h2>Pr</h2><p>59</p></td>
+					<td class="lanky"><p class="num">144.24</p><h2>Nd</h2><p>60</p></td>
+					<td class="lanky"><p class="num">144.91</p><h2>Pm</h2><p>61</p></td>
+					<td class="lanky"><p class="num">150.36</p><h2>Sm</h2><p>62</p></td>
+					<td class="lanky"><p class="num">151.96</p><h2>Eu</h2><p>63</p></td>
+					<td class="lanky"><p class="num">157.25</p><h2>Gd</h2><p>64</p></td>
+					<td class="lanky"><p class="num">158.93</p><h2>Tb</h2><p>65</p></td>
+					<td class="lanky"><p class="num">162.50</p><h2>Dy</h2><p>66</p></td>
+					<td class="lanky"><p class="num">164.93</p><h2>Ho</h2><p>67</p></td>
+					<td class="lanky"><p class="num">167.26</p><h2>Er</h2><p>68</p></td>
+					<td class="lanky"><p class="num">168.93</p><h2>Tm</h2><p>69</p></td>
+					<td class="lanky"><p class="num">173.06</p><h2>Yb</h2><p>70</p></td>
+					<td class="lanky"><p class="num">174.97</p><h2>Lu</h2><p>71</p></td>
 			  </tr>
 			  <tr>
-				<td class="tg-s268">Th</td>
-				<td class="tg-s268">Pa</td>
-				<td class="tg-s268">U</td>
-				<td class="tg-s268">Np</td>
-				<td class="tg-s268">Pu</td>
-				<td class="tg-s268">Am</td>
-				<td class="tg-s268">Cm</td>
-				<td class="tg-s268">Bk</td>
-				<td class="tg-s268">Cf</td>
-				<td class="tg-s268">Es</td>
-				<td class="tg-s268">Fm</td>
-				<td class="tg-s268">Md</td>
-				<td class="tg-s268">No</td>
-				<td class="tg-0lax">Lr</td>
+					<td colspan="3"></td>
+					<td class="actors"><p class="num">227.03</p><h2>Ac</h2><p>89</p></td>
+					<td class="actors"><p class="num">232.04</p><h2>Th</h2><p>90</p></td>
+					<td class="actors"><p class="num">231.04</p><h2>Pa</h2><p>91</p></td>
+					<td class="actors"><p class="num">238.03</p><h2>U</h2><p>92</p></td>
+					<td class="actors"><p class="num">237.05</p><h2>Np</h2><p>93</p></td>
+					<td class="actors"><p class="num">244.06</p><h2>Pu</h2><p>94</p></td>
+					<td class="actors"><p class="num">243.06</p><h2>Am</h2><p>95</p></td>
+					<td class="actors"><p class="num">247.07</p><h2>Cm</h2><p>96</p></td>
+					<td class="actors"><p class="num">247.07</p><h2>Bk</h2><p>97</p></td>
+					<td class="actors"><p class="num">251.08</p><h2>Cf</h2><p>98</p></td>
+					<td class="actors"><p class="num">254</p><h2>Es</h2><p>99</p></td>
+					<td class="actors"><p class="num">257.09</p><h2>Fm</h2><p>100</p></td>
+					<td class="actors"><p class="num">258.1</p><h2>Md</h2><p>101</p></td>
+					<td class="actors"><p class="num">259.10</p><h2>No</h2><p>102</p></td>
+					<td class="actors"><p class="num">262</p><h2>Lr</h2><p>103</p></td>
 			  </tr>
 			</table></div>
+		</body>
 </html>
