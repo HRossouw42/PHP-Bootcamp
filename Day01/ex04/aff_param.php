@@ -1,8 +1,8 @@
 #!/usr/bin/php
 <?php
     unset($argv[0]);
-    foreach($argv as $v)
+    foreach($argv as $str)
 		{
-			echo ($v."\n");
+			echo ($str."\n");
 		}
 ?>
