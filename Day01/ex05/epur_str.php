@@ -8,5 +8,4 @@
             $ret .= $v . " ";
         echo trim($ret) . "\n";
 	}
-
 	?>
