@@ -1,8 +1,5 @@
 #!/usr/bin/php
 <?php
-for ($i = 0; $i < 1000; $i++)
-{
-	echo "X";
-}
+echo str_repeat("X", 1000);
 echo "\n";
 ?>
