@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 	function ft_split($str)
 	{
@@ -5,4 +6,8 @@
 		sort($input);
 		return $input;
 	}
+?>
+
+<?php
+print_r(ft_split("Hello   World AAA"));
 ?>
