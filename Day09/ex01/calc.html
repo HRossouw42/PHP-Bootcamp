@@ -10,7 +10,7 @@
 	<form action="calc.html" method="GET">
 		<input type="text" name="left"/>
 		<select name="op">
-			<option value="plus">+</option>
+			<option value="plus" selected>+</option>
 			<option value="minus">-</option>
 			<option value="multiply">*</option>
 			<option value="divide">/</option>
@@ -29,8 +29,8 @@
 		var item = part.split("=");
 		result[item[0]] = decodeURIComponent(item[1]);
 	});
-	var	op1 = parseFloat(result.left);
-	var	op2 = parseFloat(result.right);
+	var	op1 = parseInt(result.left);
+	var	op2 = parseInt(result.right);
 	
 	if (op1 && op2)
 	{
