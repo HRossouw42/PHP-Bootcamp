@@ -1,0 +1,65 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible">
+	<title>Let it grow!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		#balloon {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="balloon" title="Click me bby" onclick="grow()" onmouseout="shrink()">
+	</div>
+</body>
+
+<script>
+
+		var ball = document.getElementById('balloon');
+		ball.style.background = "red";
+
+		function grow(){
+			var size = ball.offsetWidth + 10;
+			ball.style.width = size;
+			ball.style.height = size;
+
+			if (size > 420)
+			{
+				ball.style.width = 200;
+				ball.style.height = 200;
+			}
+			if (ball.style.backgroundColor == "red")
+				ball.style.backgroundColor = "green";
+			else if (ball.style.backgroundColor == "green")
+				ball.style.backgroundColor = "blue";
+			else if (ball.style.backgroundColor == "blue")
+				ball.style.backgroundColor = "red";
+		}
+
+		function shrink(){
+			var size = ball.offsetWidth - 5;
+			ball.style.width = size;
+			ball.style.height = size;
+
+			if (size < 200)
+			{
+				ball.style.width = 200;
+				ball.style.height = 200;
+			}
+			if (ball.style.backgroundColor == "green")
+				ball.style.backgroundColor = "red";
+			else if (ball.style.backgroundColor == "blue")
+				ball.style.backgroundColor = "green";
+			else if (ball.style.backgroundColor == "red")
+				ball.style.backgroundColor = "blue";
+		}
+	</script>
+</html>
