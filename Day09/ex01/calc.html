@@ -1,0 +1,68 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible">
+	<title>Math Wizard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<form action="calc.html" method="GET">
+		<input type="text" name="left"/>
+		<select name="op">
+			<option value="plus">+</option>
+			<option value="minus">-</option>
+			<option value="multiply">*</option>
+			<option value="divide">/</option>
+			<option value="mod">%</option>
+		</select>
+		<input type="text" name="right"/>
+		<input type="submit" name="submit"/>
+	</form>
+</body>
+<script>
+	var url = document.location.search.substr(1);
+	var result = {};
+
+	url.split("&").forEach(function(part)
+	{
+		var item = part.split("=");
+		result[item[0]] = decodeURIComponent(item[1]);
+	});
+	var	op1 = parseFloat(result.left);
+	var	op2 = parseFloat(result.right);
+	
+	if (op1 && op2)
+	{
+		if (op1 < 0 || op2 < 0 || Number.isInteger(op1) == false || Number.isInteger(op2) == false)
+			res = "Error :("
+		else if (result.op == "plus")
+			res = op1 + op2;
+		else if (result.op == "minus")
+			res = op1 - op2;
+		else if (result.op == "multiply")
+			res = op1 * op2;
+		else if (result.op == "divide")
+		{
+			if (op2 == 0)
+				res = "It\'s over 9000!"
+			else 
+				res = op1 / op2;
+		}
+		else if (result.op == "mod")
+		{
+			if (op2 == 0)
+				res = "It\'s over 9000!"
+			else
+				res = op1 % op2;
+		}
+	}
+
+	function popup(){
+		alert("Please, use me...");
+	}
+	var timer = setInterval("popup()" , (30000));
+	console.log(res);
+	alert(res);
+</script>
+</html>
