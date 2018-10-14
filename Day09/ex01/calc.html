@@ -7,62 +7,85 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<form action="calc.html" method="GET">
-		<input type="text" name="left"/>
-		<select name="op">
-			<option value="plus" selected>+</option>
-			<option value="minus">-</option>
-			<option value="multiply">*</option>
-			<option value="divide">/</option>
-			<option value="mod">%</option>
-		</select>
-		<input type="text" name="right"/>
-		<input type="submit" name="submit"/>
-	</form>
-</body>
+	<div class="page">
+		<div class="calc">
+			<form action="" id="calc">
+				<input type="text" id="left">
+				<select id="op">
+					<option value="plus" selected>+</option>
+					<option value="minus">-</option>
+					<option value="multiply">*</option>
+					<option value="divide">/</option>
+					<option value="modulus">%</option>
+				</select>
+				<input type="text" id="right">
+				<input type="submit" id="submit" value="Try me!">
+			</form>
+		</div>
+	</div>
 <script>
-	var url = document.location.search.substr(1);
-	var result = {};
+  		var calc;
+        var input1;
+        var right;
+        var option;
+        window.onload = function () {
+            calc = document.querySelector("#calc");
+            input1 = document.querySelector("#left");
+            input2 = document.querySelector("#right");
+            option = document.querySelector("#op");
+            calc.addEventListener("submit", submit);
+        }
+        function numIsValid(left, right) {
+            return (left == parseInt(left, 10) && left >= 0 
+			&& 
+			right == parseInt(right, 10) && right >= 0);
+        }
+        function submit(event) {
+            var l = Number(input1.value);
+            var r = Number(input2.value);
+            if (!numIsValid(input1.value, input2.value)) {
+                alert("Error :(");
+                return false;
+            }
+            switch (option.value) {
+                case ('plus'):
+                    result(l + r);
+                    break;
+                case ('minus'):
+                    result(l - r);
+                    break;
+                case ('multiply'):
+                    result(l * r);
+                    break;
+                case ('divide'):
+                    if (r === 0) {
+                        result("It’s over 9000!");
+                    } 
+					else {
+                        result(l / r);
+                    }
+                    break;
+                case ('modulus'):
+                    if (r === 0) {
+                        result("It’s over 9000!");
+                    } 
+					else {
+                        result(l / r);
+                    }
+                    break;
+                default:
+                    result("No operation found");
+                    break;
+            }
+        }
 
-	url.split("&").forEach(function(part)
-	{
-		var item = part.split("=");
-		result[item[0]] = decodeURIComponent(item[1]);
-	});
-	var	op1 = parseFloat(result.left);
-	var	op2 = parseFloat(result.right);
-	
-	if (op1 && op2)
-	{
-		if (op1 < 0 || op2 < 0 || Number.isInteger(op1) == false || Number.isInteger(op2) == false)
-			res = "Error :("
-		else if (result.op == "plus")
-			res = op1 + op2;
-		else if (result.op == "minus")
-			res = op1 - op2;
-		else if (result.op == "multiply")
-			res = op1 * op2;
-		else if (result.op == "divide")
-		{
-			if (op2 == 0)
-				res = "It\'s over 9000!"
-			else 
-				res = op1 / op2;
-		}
-		else if (result.op == "mod")
-		{
-			if (op2 == 0)
-				res = "It\'s over 9000!"
-			else
-				res = op1 % op2;
-		}
-	}
-
+	function result(res) {
+            console.log(res);
+            alert(res);
+    }	
 	function popup(){
-		alert("Please, use me...");
+			alert("Please, use me...");
 	}
-	//var timer = setInterval("popup()" , (30000));
-	console.log(res);
-	alert(res);
+	var timer = setInterval("popup()" , (30000));
 </script>
 </html>
