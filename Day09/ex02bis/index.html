@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> TODO </title>
+		<style>
+			html
+			{
+				font-family: sans-serif;
+			}
+			#ft_list
+			{
+				width: 400px;
+			}
+			#ft_list div
+			{
+				width: 370px;
+				padding: 15px;
+				background-color: #EEE;
+				border: 1px solid #BBB;
+				text-align: center;
+				margin-top: .5em;
+				box-shadow: 0 1px 3px rgba(0,0,0,.3);
+				border-radius: 2px;
+			}
+			#ft_list div:hover:after
+			{
+				content:'Delete?';
+				right: 15px;
+				position: center;
+				color: rgb(255, 0, 0);
+        	}
+			input
+			{
+				width: 400px;
+				padding: 10px;
+				color:rgb(0, 0, 0);
+				background-color: rgb(255, 255, 255);
+				border: 1px dotted #BBB;
+				text-align: center;
+				margin-top: .5em;
+				box-shadow: 0 1px 3px rgba(0,0,0,.3);
+				border-radius: 2px;
+			}
+		</style>
+	</head>
+	<body>
+	<input type="submit" value="New" onclick="newTodo()"></input>
+	<div id="ft_list"></div>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="todo.js"></script>
+	</body>
+</html>
