@@ -1,0 +1,92 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible">
+	<title>Math Wizard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="page">
+		<div class="calc">
+			<form action="" id="calc">
+				<input type="text" id="left">
+				<select id="op">
+					<option value="plus" selected>+</option>
+					<option value="minus">-</option>
+					<option value="multiply">*</option>
+					<option value="divide">/</option>
+					<option value="modulus">%</option>
+				</select>
+				<input type="text" id="right">
+				<input type="submit" id="submit" value="Try me!">
+			</form>
+		</div>
+    </div>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+  		var calc;
+        var input1;
+        var right;
+        var option;
+        $(document).ready(function(){
+            calc = $('#calc');
+            input1 = $('#left');
+            input2 = $('#right');
+            option = $('#op');
+            calc.submit(submit);
+        });
+        function numIsValid(left, right) {
+            return (left == parseInt(left, 10) && left >= 0 
+			&& 
+			right == parseInt(right, 10) && right >= 0);
+        }
+        function submit(event) {
+            var l = Number(input1.val());
+            var r = Number(input2.val());
+            if (!numIsValid(input1.val(), input2.val())) {
+                alert("Error :(");
+                return false;
+            }
+            switch (option.val()) {
+                case ('plus'):
+                    result(l + r);
+                    break;
+                case ('minus'):
+                    result(l - r);
+                    break;
+                case ('multiply'):
+                    result(l * r);
+                    break;
+                case ('divide'):
+                    if (r === 0) {
+                        result("It’s over 9000!");
+                    } 
+					else {
+                        result(l / r);
+                    }
+                    break;
+                case ('modulus'):
+                    if (r === 0) {
+                        result("It’s over 9000!");
+                    } 
+					else {
+                        result(l / r);
+                    }
+                    break;
+                default:
+                    result("No operation found");
+                    break;
+            }
+        }
+
+	function result(res) {
+            console.log(res);
+            alert(res);
+    }	
+	function popup(){
+			alert("Please, use me...");
+	}
+	var timer = setInterval("popup()" , (30000));
+</script>
+</html>
