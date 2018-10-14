@@ -29,8 +29,8 @@
 		var item = part.split("=");
 		result[item[0]] = decodeURIComponent(item[1]);
 	});
-	var	op1 = parseInt(result.left);
-	var	op2 = parseInt(result.right);
+	var	op1 = parseFloat(result.left);
+	var	op2 = parseFloat(result.right);
 	
 	if (op1 && op2)
 	{
@@ -61,7 +61,7 @@
 	function popup(){
 		alert("Please, use me...");
 	}
-	var timer = setInterval("popup()" , (30000));
+	//var timer = setInterval("popup()" , (30000));
 	console.log(res);
 	alert(res);
 </script>
